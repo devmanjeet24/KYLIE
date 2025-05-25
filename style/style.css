@@ -329,3 +329,10 @@ footer h2 {
     padding: 40px 0 ;
     margin-top: 50px;
 }
+
+.newslettercls {
+    flex-direction: column;
+    gap: 20px;
+}
+
+

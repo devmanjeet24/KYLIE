@@ -27,4 +27,29 @@
     nav.show {
         display: flex !important;
     }
+
+
+
+
+    /* footer  */
+    .Aboutkylie {
+    margin-top: 45px;
 }
+.Aboutkylie h2 {
+    font-size: 40px;
+}
+
+.footer1 {
+    order: 2;
+}
+
+footer > .container >.row {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+
+
+
