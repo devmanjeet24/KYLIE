@@ -7,7 +7,8 @@
     <title>KYLIE MNFIELD</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
+        <!-- fontawesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- stylecss  -->
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/responsive.css">
@@ -15,30 +16,156 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="/images/Kylie_logo.png" alt="logo">
-                </a>
+   <header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/Kylie_logo.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Books</a></li>
+                <li><a href="contact.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+    <!-- banner section star from here  -->
+
+    <div class="banner">
+        <img src="./images/1Mansfield_website.jpg" alt="">
+    </div>
+
+    <!-- bannner section ends from here  -->
+
+
+    
+        <div class="container mt-5" id="visiting"> 
+
+            <div class="visiting">
+
+                <div class="kyliebox">
+                    <img src="/images/Kylie_closeup.jpg" alt="kyliebox">
+                </div>
+
+
+                <div class="visting-text">
+                 <h3>   Thanks for visiting my website!</h3>
+                 <p>You'll find lots of the information about my writing and storytelling</p>
+                 <p>Happy reading</p>
+                </div>
+
+                <div class="kylie-sign">
+                    <img src="./images/kylie_sign.png" alt="">
+                </div>
+
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Books</a></li>
-                    <li><a href="contact.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
         </div>
-    </header>
+
+
+
+        <!-- newsletter section start from here  -->
+
+
+        <section id="newsletter" class="mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 newslettercls">
+                        <h2>Subscribe to our newsletter</h2>
+                        <form action="#">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Contact Info</h3>
+
+                        <div class="mt-3">
+                            <h4>Email</h4>
+                            <p><a href="#">contactinfo@domain.com</a></p>
+                        </div>
+
+                        <div class="mt-3">
+                            <h4>Email</h4>
+                            <p><a href="#">contactinfo@domain.com</a></p>
+                        </div>
+
+                    </div>
+                    <div class="col-4 text-center">
+
+                        <h2>Kylie Manisfield</h2>
+
+                        <div class="footer-icon mt-4">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                         <h3 class="text-end">Navigation</h3>
+
+                         <ul class="text-end mt-3">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Books</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                         </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2023 Kylie Manisfield. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+        <!-- <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+</script> -->
+
+
+        <script src="./js/style.js"></script>
 </body>
 
 </html>

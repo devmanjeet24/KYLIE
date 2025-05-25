@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
 /* ===== CSS Reset ===== */
 * {
     margin: 0;
@@ -17,6 +18,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ===== Images ===== */
@@ -35,7 +37,7 @@ ul {
 p {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Noto Serif", serif;
 }
 
 h1,
@@ -46,17 +48,19 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    /* font-family: "Noto Serif", serif; */
+    font-family: "Questrial", sans-serif;
 }
 
 /* ===== font-family ===== */
 
 /* font-family: "Poppins", sans-serif; */
-/* font-family: "Roboto", sans-serif; */
-/* font-family: "PT Sans", sans-serif; */
+/* font-family: "Noto Serif", serif; */
+/* font-family: "Questrial", sans-serif; */
 
 /* ===== Variables (Optional) ===== */
 :root {
-    --primary-color: #b20839;
+    --primary-color: #eccd99;
     --background-color: #faf1e2;
     --heading-color: #063b41;
 }
@@ -77,6 +81,11 @@ h6 {
     width: 75%;
 }
 
+header {
+    background: var(--primary-color);
+    padding-bottom: 30px;
+}
+
 header nav {
     display: flex;
     justify-content: center;
@@ -94,6 +103,229 @@ header nav ul li {
     list-style: none;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header nav ul li a:hover {
+    color: var(--heading-color);
+}
+
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    border-radius: 2px;
+}
+
+
+/* header ends here  */
+
+.kyliebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kyliebox img {
+    width: 300px;
+}
+
+#visiting {
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+}
+
+
+.visiting {
+    box-shadow: 1px 1px 12px 2px rgb(175 175 175 / 75%);
+    padding: 30px;
+    width: 356px;
+}
+
+.visting-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.visting-text h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.kylie-sign {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.kylie-sign img {
+    width: 120px;
+}
+
+
+/* newsletter section start from her  */
+
+
+#newsletter {
+    background-image: url(../images/subscribe_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newslettercls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.newslettercls h2 {
+    font-size: 30px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.newslettercls input {
+    padding: 13px;
+    font-size: 19px;
+    width: 300px;
+}
+
+.newslettercls button {
+     height: 58px;
+    padding: 30px;
+    display: FLEX;
+    justify-content: center;
+    align-items: CENTER;
+    background: var(--heading-color);
+    color: #fff;
+    box-shadow: 5px 5px 0px 0px #287179;
+}
+.newslettercls form {
+    display: flex;
+    gap: 15px;
+}
+
+/* footer section start from here */
+footer {
+    background: var(--heading-color);
+    padding: 85px 0 20px 0;
+    color: #fff;
+}
+
+footer h2 {
+    font-size: 45px;
+}
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer-icon a {
+    background: #ffffff;
+    color: #063b41;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Aboutsec {
+    margin-top: 115px;
+}
+
+.imagback {
+    background: var(--primary-color);
+    position: relative;
+    height: 450px;
+    width: auto;
+    box-shadow: 4px 6px 8px -1px #848484;
+}
+
+.imagback img {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    width: 100%;
+    height: 100%;
+}
+
+.Aboutkylie p{
+    margin-bottom: 12px;
+    /* font-family: "Questrial", sans-serif; */
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #494949;
+    text-align: justify;
+}
+
+.Aboutkylie h2{
+    /* font-family: "Questrial", sans-serif; */
+     font-family: "Playfair Display", serif;
+     font-style: italic;
+     color: green;
+}
+
+.sometext p{
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #494949;
+    text-align: justify;
+}
+
+#breadcum{
+    background-image: url(../images/subscribe_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#smallpara{
+    background-image: url(../images/subscribe_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    padding: 40px 0 ;
+    margin-top: 50px;
 }
