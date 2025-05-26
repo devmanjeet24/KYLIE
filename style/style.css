@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* ===== CSS Reset ===== */
 * {
     margin: 0;
@@ -11,7 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     background-color: #fff;
-    color: #333;
+    color: #333;    
 }
 
 /* ===== Links ===== */
@@ -37,7 +38,8 @@ ul {
 p {
     margin: 0;
     padding: 0;
-    font-family: "Noto Serif", serif;
+    /* font-family: "Noto Serif", serif; */
+    font-family: myFirstFont;
 }
 
 h1,
@@ -49,7 +51,8 @@ h6 {
     margin: 0;
     padding: 0;
     /* font-family: "Noto Serif", serif; */
-    font-family: "Questrial", sans-serif;
+    /* font-family: "Questrial", sans-serif; */
+    font-family: mysevenFont;
 }
 
 /* ===== font-family ===== */
@@ -57,12 +60,93 @@ h6 {
 /* font-family: "Poppins", sans-serif; */
 /* font-family: "Noto Serif", serif; */
 /* font-family: "Questrial", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+
+
+
+/* font family start */
+
+  @font-face {
+     font-family: myFirstFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-BOLD.OTF);
+  }
+
+    @font-face {
+     font-family: mysecondFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-BOLDCOND.OTF);
+  }
+
+    @font-face {
+     font-family: mythirdFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.OTF);
+  }
+
+    @font-face {
+     font-family: myForthFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-BOLDIT.OTF);
+  }
+
+    @font-face {
+     font-family: myFifthFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-COND.OTF);
+  }
+
+    @font-face {
+     font-family: mysixFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-CONDIT.OTF);
+  }
+
+    @font-face {
+     font-family: mysevenFont;
+     src: url(/fonts/myriad-pro/MyriadPro-Light.otf);
+  }
+
+    @font-face {
+     font-family: myEightFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-REGULAR.OTF);
+  }
+
+    @font-face {
+     font-family: mynineFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-SEMIBOLD.OTF);
+  }
+
+    @font-face {
+     font-family: mytenFont;
+     src: url(/fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF);
+  }
+
+
+
+      @font-face {
+     font-family: timescgbolditalic;
+     src: url(/fonts/times-cg/Times\ CG\ Bold\ Italic.otf);
+  }
+
+      @font-face {
+     font-family: timescgbold;
+     src: url(/fonts/times-cg/Times\ CG\ Bold.otf);
+  }
+
+      @font-face {
+     font-family: timescgitalic;
+     src: url(/fonts/times-cg/Times\ CG\ Italic.otf);
+  }
+
+      @font-face {
+     font-family: timescg;
+     src: url(/fonts/times-cg/Times\ CG.otf);
+  }
+
+/* font famly emnds from here  */
 
 /* ===== Variables (Optional) ===== */
 :root {
     --primary-color: #eccd99;
     --background-color: #faf1e2;
-    --heading-color: #063b41;
+    --heading-color: #052C30;
+    --green-color:#006666;
+    --light-green-color:#669900;
 }
 
 
@@ -82,7 +166,7 @@ h6 {
 }
 
 header {
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
     padding-bottom: 30px;
 }
 
@@ -105,14 +189,26 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none !important;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 400;
     transition: all 0.3s ease-in-out;
+      font-family: "Inter", sans-serif;
+      /* font-weight: 500; */
+      color: #063B41;
+}
 
+.bredcum a, .bredcum span{
+    color: var(--light-green-color);
+}
+
+.bredcum h2 {
+    margin-top: 20px;
+    font-family: mysevenFont;
+    font-weight: 300;
 }
 
 header nav ul li a:hover {
-    color: var(--heading-color);
+    color: var(--green-color);
 }
 
 
@@ -172,8 +268,24 @@ header nav ul li a:hover {
 }
 
 .visting-text h3 {
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--light-green-color);
+    text-align: center;
+    line-height: 1;
+}
+
+p.paravisitig {
+    margin: 12px;
+        text-align: center;
+}
+
+.footer-anchor a {
+    color: #c3c3c3;
+}
+
+.footer-anchor li {
+    margin-bottom: 14px;
 }
 
 .kylie-sign {
@@ -184,6 +296,10 @@ header nav ul li a:hover {
 
 .kylie-sign img {
     width: 120px;
+}
+
+.mainvisting {
+    padding: 2% 2% 2% 2%;
 }
 
 
@@ -210,8 +326,10 @@ header nav ul li a:hover {
 
 .newslettercls h2 {
     font-size: 30px;
-    color: var(--heading-color);
+    color: var(--green-color);
     font-weight: 600;
+    font-family: mysevenFont;
+    letter-spacing: 1px;
 }
 
 .newslettercls input {
@@ -263,7 +381,26 @@ footer h2 {
     align-items: center;
 }
 
+.footergap {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
 
+.footergap p a {
+    color: #c3c3c3;
+}
+.footergap h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.rightreserverd p{
+    font-family: myEightFont;
+        color: #c3c3c3;
+
+}
+
+/* footer ends from here  */
 
 .Aboutsec {
     margin-top: 115px;
@@ -288,25 +425,28 @@ footer h2 {
 .Aboutkylie p{
     margin-bottom: 12px;
     /* font-family: "Questrial", sans-serif; */
-    font-family: "Noto Serif", serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-family: myForthFont;
+    font-size: 16px;
+    font-weight: 400;
     color: #494949;
     text-align: justify;
 }
 
 .Aboutkylie h2{
     /* font-family: "Questrial", sans-serif; */
-     font-family: "Playfair Display", serif;
+     /* font-family: "Playfair Display", serif; */
+     font-family: timescgbold;
      font-style: italic;
-     color: green;
+     color: #669900;
 }
 
 .sometext p{
-    font-family: "Noto Serif", serif;
+    /* font-family: "Noto Serif", serif; */
+    font-family: mytenFont;
     font-size: 18px;
     font-weight: 500;
-    color: #494949;
+    color: #404040;
+   
     text-align: justify;
 }
 
@@ -329,10 +469,6 @@ footer h2 {
     padding: 40px 0 ;
     margin-top: 50px;
 }
-
-.newslettercls {
-    flex-direction: column;
-    gap: 20px;
+section#smallparacontainer {
+    padding: 2% 2%;
 }
-
-
